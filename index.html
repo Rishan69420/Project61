@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Project 61</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: white;
+        text-align: center;
+        font-family: Arial;
+        user-select: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #hobby {
+        background-color: orange;
+      }
+
+      #work {
+        background-color: blanchedalmond;
+      }
+
+      #inspiration {
+        background-color: lawngreen;
+      }
+
+      #hobby, #work, #inspiration, #contact {
+        margin-top: -20pt;
+      }
+
+      #about {
+        background: linear-gradient(#8CD8FF 0%, #59A5FF 100%) no-repeat;
+      }
+
+      h1 {
+        font-size: 200%;
+        text-shadow: 1pt 1pt black;
+      }
+
+      #hobbyT {
+        font-size: 120%;
+        text-shadow: 1.5pt 1.5pt 1pt black;
+        font-family: "Abel";
+      }
+
+      .line {
+        background-color: white;
+        width: 350pt;
+        height: 5pt;
+        margin-left: 295pt;
+      }
+
+      #reasonHobby {
+        width: 60%;
+        text-shadow: 0.6pt 0.6pt black;
+        margin-left: 190pt;
+      }
+
+      #aboutText {
+        width: 45%;
+        text-shadow: 0.6pt 0.6pt black;
+        margin-left: 250pt;
+      }
+
+      .link {
+        display: inline;
+        text-shadow: 1pt 1pt black, 1pt -1pt black, -1pt -1pt black, -1pt 1pt black;
+        padding: 6pt 9pt;
+        font-size: 120%;
+        cursor: pointer;
+      }
+
+      .link:hover {
+        background-color: white;
+        animation-name: c;
+        animation-duration: 0.45s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+      }
+
+      @keyframes c {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      #links {
+        list-style-type: none;
+        margin-left: 445pt;
+        position: fixed;
+      }
+
+      #links li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      img {
+        transition: transform .2s;
+      }
+
+      img:hover {
+        transform: scale(0.9);
+      }
+
+      #contact {
+        background-color: #7A0033;
+      }
+
+      .s {
+        text-decoration: none;
+        color: white !important;
+        display: block;
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul id="links">
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#hobby">My Favorite Hobbies</a></li>
+        <li class="link"><a href="#work">My Work</a></li>
+        <li class="link"><a href="#inspiration">My Inspiration</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583551106639" width="150" id="image">
+      <h1>About</h1>
+      <div class="line"></div>
+      <p id="aboutText">I am a 10 year old kid, who likes playing video games, coding, and reading. I am in 5th grade. My favorite color is orange, and my favorite number is 42. I dont have any pets, and I don't live with any siblings.</p>
+    </section>
+    <section id="hobby">
+      <h1 id="hobbyTitle">My favorite hobby is<br><span id="hobbyT">Playing video games and coding</span></h1>
+      <div class="line"></div>
+      <p id="reasonHobby">I like both video games <i>and</i> coding. I enjoy video games because they are very entertaining. Another reason is that you can achieve goals that are impossible to reach in real life. I like to code, because it gives me the ability to get as creative as I want. Although bugs in the program can be irritating and frustrating, fixing them gives you a sense of accomplishment.</p>
+    </section>
+    <section id="work">
+      <h1>My work</h1>
+      <div class="line"></div>
+      <iframe src="https://code.sololearn.com/W1L6VE8os9v0/#" width="700" height="400"></iframe>
+      <iframe src="https://code.sololearn.com/WVhalwhYf16t/#" width="700" height="400"></iframe>
+      <iframe src="https://code.sololearn.com/Wx5FOf72fhii/#" width="700" height="400"></iframe>
+    </section>
+    <section id="inspiration">
+      <h1>My inspiration</h1>
+      <div class="line"></div>
+      <a href="https://www.youtube.com/c/dream/featured" target="_blank">
+        <img src="https://yt3.ggpht.com/ytc/AAUvwnjQDBDnhfQwkv2gmGAr-sEIpUF_JrKdF-inbBvCRA=s176-c-k-c0x00ffffff-no-rj-mo" id="insprationPic">
+      </a>
+    </section>
+    <section id="contact">
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5884643159047!2d72.8884604141974!3d19.125701687059404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c97f346053b7%3A0xacf72f56793d190a!2sWhitehat%20Education%20Technology%20Pvt.%20Ltd.!5e0!3m2!1sen!2sus!4v1612578202520!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <a href="mailto:rrajeshlolxd@gmail.com?Subject=Hello" class="s"><i class="fa fa-envelope"></i>&nbsp;rrajeshlolxd@gmail.com</a>
+      <a href="https://www.youtube.com/channel/UCUcp_GrJnmfxhAo89bG0Wsg/featured" target="_blank" class="s"><i class=" fa fa-youtube"></i>Rishan Plays</a>
+    </section>
+  </body>
+</html>
